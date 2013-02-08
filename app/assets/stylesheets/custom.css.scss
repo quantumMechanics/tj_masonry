@@ -8,6 +8,7 @@ $grayShadow: #666666;
 $grayHeader: rgb(114,117,116);
 $blackShadow: rgba(0,0,0,0.8);
 $grayLayerMedium: rgb(55,55,55);
+$grayText: #d5d1d1;
 
 /* logo */
 
@@ -49,17 +50,11 @@ body {
    border-top: none;*/
 }
 
-h1 {
-	color: #000;
-}
-
-
-
-
 /* carousel and inner picture styles */
 .carousel {
    padding: 7%;
    padding-top: 5%;
+   padding-bottom: 3%;
 }
 
 .carousel-inner {
@@ -67,14 +62,35 @@ h1 {
    box-shadow: 0px 0px 10px 0px $blackShadow;
 }
 
-// nav-pills active state 
+/* nav-pills active state */
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: $white;
   background-color: $grayLayerMedium;
 }
 
-//nav-pills not selected
+/*nav-pills not selected */
 .nav-pills  a {
    color: $grayDarker;
+}
+
+/* text */
+p {
+   color: $white;
+}
+
+.center-text {
+   text-align: center;
+}
+
+h2, h3, h4 {
+   color: $grayText;
+}
+
+.calling-card {
+   font-family: Arial, Arial, Helvetica, sans-serif;
+
+   & > h3{
+      text-shadow: $grayDarker 2px 2px;
+   }
 }
