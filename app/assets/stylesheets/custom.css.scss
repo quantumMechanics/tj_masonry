@@ -1,47 +1,80 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+/* variables */
+
+$grayMediumDark: #333333;
+$grayShadow: #666666;
+$grayHeader: rgb(114,117,116);
+$blackShadow: rgba(0,0,0,0.8);
+$grayLayerMedium: rgb(55,55,55);
+
+/* logo */
+
+.logo {
+   color: $grayDarker;
+   font-family: Verdana, Verdana, Geneva, sans-serif;
+   text-shadow: $grayShadow 2px 2px;
+
+   &:hover {
+    color: $grayMediumDark;
+  }
+
+}
+
+/* background image */
 
 body {
-	 /* 60px to make the container go all the way to the bottom of the topbar */
-	 padding-top: 60px;
+	 
+	 margin: 7%;
 	 /*background: #bcc1c0;*/
 	 background-image: url("zenbg-stone.png");
+    background-attachment: fixed;
 }
 
 
 /* inner area border */
 
 .inner_area_1 {
-   background: none repeat scroll 0px 0px rgb(114,117,116);
-
-   /*width: 80%;*/
-   border: 1px solid rgb(55,55,55);
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
-   margin: 0px 10px 0px 10px;
+   background: none repeat scroll 0px 0px $grayHeader;
+   border: 1px solid $grayLayerMedium;
+   box-shadow: 0px 0px 10px 0px $blackShadow;
 }
 
 .inner_area_2 {
-   background: none repeat scroll 0px 0px rgb(55,55,55);
+   background: none repeat scroll 0px 0px $grayLayerMedium;
 
-   /*width: 80%;*/
-   border: 1px solid rgb(55,55,55);
-   border-top: none;
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
-   margin: 0px 0px 0px 0px;
+   /* TODO: removing this causes a light gray area near the bottom */
+   /*border: 1px solid rgb(55,55,55);
+   border-top: none;*/
 }
 
 h1 {
 	color: #000;
 }
 
-.masthead {
-	border-bottom: 2px solid rgb(55,55,55);
-	/*border-bottom-width: 500px;*/
+
+
+
+/* carousel and inner picture styles */
+.carousel {
+   padding: 7%;
+   padding-top: 5%;
 }
 
-/*hr {
-	margin: 30px 0;
-	color: #000;
-	max-width: 85%;
-}*/
+.carousel-inner {
+   border: 2px solid black;
+   box-shadow: 0px 0px 10px 0px $blackShadow;
+}
+
+// nav-pills active state 
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  color: $white;
+  background-color: $grayLayerMedium;
+}
+
+//nav-pills not selected
+.nav-pills  a {
+   color: $grayDarker;
+}
