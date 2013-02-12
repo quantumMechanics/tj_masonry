@@ -24,15 +24,37 @@ $grayText: #d5d1d1;
 }
 
 /* background image */
+@media (min-width: 480px){
 
-body {
-	 
-	 margin: 7%;
-	 /*background: #bcc1c0;*/
-	 background-image: url("zenbg-stone.png");
-    background-attachment: fixed;
+  body {
+  	 
+  	 margin: 7%;
+  	 /*background: #bcc1c0;*/
+  	 background-image: url("zenbg-stone.png");
+      background-attachment: fixed;
+  }
 }
 
+@media (max-width: 480px){
+ 
+  body{
+    //background: #bcc1c0;
+     padding: 0%;
+  } 
+
+  .inner_area_1 {
+    border: none;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  section h3 {
+    font-size: 0.9em;
+  }
+}
 
 /* inner area border */
 
@@ -63,16 +85,23 @@ body {
 }
 
 /* nav-pills active state */
-.nav-pills > .active > a,
-.nav-pills > .active > a:hover {
+.navbar .nav-pills > .active > a,
+.navbar .nav-pills > .active > a:hover {
   color: $white;
   background-color: $grayLayerMedium;
+  border-radius: 2px;
 }
 
 /*nav-pills not selected */
-.nav-pills  a {
+.navbar .nav-pills > li > a {
    color: $grayDarker;
+   border-radius: 2px;
+
+   &:hover{
+     background-color: $grayLight;
+   }
 }
+
 
 /* text */
 p {
