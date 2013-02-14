@@ -1,8 +1,7 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-/* variables */
-
+/* VARIABLES */
 $grayMediumDark: #333333;
 $grayShadow: #666666;
 $grayHeader: rgb(114,117,116);
@@ -10,66 +9,26 @@ $blackShadow: rgba(0,0,0,0.8);
 $grayLayerMedium: rgb(55,55,55);
 $grayText: #d5d1d1;
 
-/* logo */
-
+/* LOGO */
 .logo {
    color: $grayDarker;
    font-family: Verdana, Verdana, Geneva, sans-serif;
    text-shadow: $grayShadow 2px 2px;
 }
 
-
-/* background image */
-@media (min-width: 480px){
-
-  body {
-  	 
-  	 margin: 7%;
-  	 /*background: #bcc1c0;*/
-  	 background-image: url("zenbg-stone.png");
-      background-attachment: fixed;
-  }
-}
-
-@media (max-width: 480px){
- 
-  body{
-    //background: #bcc1c0;
-     padding: 0%;
-  } 
-
-  .inner_area_1 {
-    border: none;
-    box-shadow: none;
-  }
-
-  h2 {
-    font-size: 1em;
-  }
-
-  section h3 {
-    font-size: 0.9em;
-  }
-}
-
-/* inner area border */
-
+/* INNER AREA 1 - LIGHT GRAY */
 .inner_area_1 {
    background: none repeat scroll 0px 0px $grayHeader;
    border: 1px solid $grayLayerMedium;
-   box-shadow: 0px 0px 10px 0px $blackShadow;
-   
+   box-shadow: 0px 0px 10px 0px $blackShadow; 
 }
 
+/* INNER AREA 2 - DARK GRAY */
 .inner_area_2 {
    background: none repeat scroll 0px 0px $grayLayerMedium;
-   
-   /* TODO: removing this causes a light gray area near the bottom */
-   /*border: 1px solid rgb(55,55,55);
-   border-top: none;*/
 }
 
-/* carousel and inner picture styles */
+/* CAROUSEL AND IT'S PICTURES */
 .carousel {
    padding: 7%;
    padding-top: 5%;
@@ -101,7 +60,6 @@ $grayText: #d5d1d1;
    }
 }
 
-
 /* TEXT */
 p {
    color: $white;
@@ -116,7 +74,6 @@ h2, h3, h4 {
 }
 
 /* TELEPHONE LINE */
-
 .calling-card {
    font-family: Arial, Arial, Helvetica, sans-serif;
 
@@ -131,13 +88,13 @@ h2, h3, h4 {
 /* FOOTER */
 
 footer {
-  margin-top: 1%;
+  margin-top: 10px;
   padding-top: 0%;
-  margin-bottom: 5%;
-  margin-left: 0.5%;
-  margin-right: 0.8%;
+  margin-bottom: 50px;
+  margin-left: 7px;
+  margin-right: 10px%;
   
-  color: $grayLight;
+  /*color: $grayLight; */
   
   p {
     color: $grayDarker;
@@ -158,5 +115,48 @@ footer {
       margin-right: 10px;
       padding-bottom: 10px;
     }
+  }
+}
+
+
+
+
+
+
+/* RESPONSIVE WEB */
+
+/* TABLETS AND DESKTOP */
+@media (min-width: 480px){
+
+  body {
+     
+     margin: 5%;
+     margin-top: 2.5%;
+     margin-bottom: 2.5%;
+     
+     /*background: #bcc1c0;*/
+     background-image: url("zenbg-stone.png");
+      background-attachment: fixed;
+  }
+}
+
+@media (max-width: 480px){
+ 
+  body{
+    /*background: #bcc1c0;*/
+     padding: 0%;
+  } 
+
+  .inner_area_1 {
+    border: none;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  section h3 {
+    font-size: 0.9em;
   }
 }
