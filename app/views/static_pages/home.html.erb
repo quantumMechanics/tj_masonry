@@ -4,7 +4,7 @@
 
 	    <!--%= render 'layouts/navbar' %-->
 	  
-	    <div class="container">
+	    <div class="">
 	    	<div class="inner_area_1">
 	    		<div class="navbar navbar-inverse">
 	    			
@@ -30,8 +30,6 @@
 
 	      		<div class="inner_area_2">
 
-		      	 
-
 		      		<div id="myCarousel" class="carousel slide" data-pause="hover">
 					  <!-- Carousel items -->
 					  <div class="carousel-inner">
@@ -51,7 +49,7 @@
 					</div>
 
 					
-					<section class="center-text">
+					<div class="center-text">
 						
 								<h2> 
 									Masonry | Concrete | Remodelling
@@ -60,24 +58,42 @@
 						<h3>
 							Serving the Greater Philadelphia area for 10 years <br/>
 						</h3>
-					</section>		
+					</div>		
 
-					<section class="center-text calling-card">
+					<div class="center-text calling-card">
 						<h3>
 							Call us today - 215 555 5555
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-							<br>
-						</h4>
-					</section>		 
+						</h3>
+					</div>		 
 
-		      	</div>
-	      	</div>
+
+		      	</div> <!-- inner-area-2 -->
+
+		      	<footer >
+					
+					
+					<p>Web Design by Akinwale Olaleye</p>
+					
+
+					<ul>
+						<li> <%= image_tag src="g-plus-icon-32x32.png", alt: "",
+								height: "32", width: "32" %>
+						</li>
+						<li>
+							<%= image_tag src="twitter-bird.png", alt: "", 
+							   height: "32", width: "32" %>
+						</li>
+						<li>
+							<%= image_tag src="facebook-logo.png", alt: "" , 
+							   height: "32", width: "32" %>
+						</li>
+					</ul>
+
+				</footer>
+
+	      	</div> <!-- inner-area-1 -->
+
+	      	
 
 	    </div> <!-- /container -->
 	
