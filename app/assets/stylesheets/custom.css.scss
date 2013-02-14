@@ -60,6 +60,14 @@ $grayText: #d5d1d1;
    }
 }
 
+.navbar {
+  margin-bottom: 0px;
+
+  h3 {
+    margin: 5px 0px;
+  }
+}
+
 /* TEXT */
 p {
    color: $white;
@@ -120,7 +128,7 @@ footer {
 
 
 
-
+/****************************************************************/
 
 
 /* RESPONSIVE WEB */
@@ -133,7 +141,7 @@ footer {
      margin: 5%;
      margin-top: 2.5%;
      margin-bottom: 2.5%;
-     
+
      /*background: #bcc1c0;*/
      background-image: url("zenbg-stone.png");
       background-attachment: fixed;
