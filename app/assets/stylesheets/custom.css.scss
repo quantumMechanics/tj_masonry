@@ -9,12 +9,55 @@ $blackShadow: rgba(0,0,0,0.8);
 $grayLayerMedium: rgb(55,55,55);
 $grayText: #d5d1d1;
 
+
 /* LOGO */
 .logo {
    color: $grayDarker;
    font-family: Verdana, Verdana, Geneva, sans-serif;
    text-shadow: $grayShadow 2px 2px;
 }
+
+
+/* RESPONSIVE WEB */
+
+/* TABLETS AND DESKTOP */
+@media (min-width: 480px){
+
+  body {
+     
+     margin: 5%;
+     margin-top: 2.5%;
+     margin-bottom: 2.5%;
+
+     /*background: #bcc1c0;*/
+     background-image: url("zenbg-stone.png");
+      background-attachment: fixed;
+  }
+}
+
+/* PHONES */
+@media (max-width: 480px){
+ 
+  body{
+    /*background: #bcc1c0;*/
+     padding: 0%;
+  } 
+
+  .inner_area_1 {
+    border: none;
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  section h3 {
+    font-size: 0.9em;
+  }
+}
+
+
 
 /* INNER AREA 1 - LIGHT GRAY */
 .inner_area_1 {
@@ -127,45 +170,3 @@ footer {
 }
 
 
-
-/****************************************************************/
-
-
-/* RESPONSIVE WEB */
-
-/* TABLETS AND DESKTOP */
-@media (min-width: 480px){
-
-  body {
-     
-     margin: 5%;
-     margin-top: 2.5%;
-     margin-bottom: 2.5%;
-
-     /*background: #bcc1c0;*/
-     background-image: url("zenbg-stone.png");
-      background-attachment: fixed;
-  }
-}
-
-/* PHONES */
-@media (max-width: 480px){
- 
-  body{
-    /*background: #bcc1c0;*/
-     padding: 0%;
-  } 
-
-  .inner_area_1 {
-    border: none;
-    box-shadow: none;
-  }
-
-  h2 {
-    font-size: 1em;
-  }
-
-  section h3 {
-    font-size: 0.9em;
-  }
-}
