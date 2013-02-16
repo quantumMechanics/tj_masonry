@@ -1,5 +1,8 @@
 McbrideMasonry::Application.routes.draw do
   root to: 'static_pages#home'
+  match '/services', to: 'static_pages#services'
+  match '/samples', to: 'static_pages#samples'
+  match 'contact', to: 'static_pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

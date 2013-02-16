@@ -3,7 +3,7 @@
 <head>
   <title>McBride Masonry | <%= yield(:title_end) %> </title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="McBride Masonry">
@@ -12,18 +12,23 @@
 
   <%= render 'layouts/shim' %>
 
-  <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+ 
 </head>
 
 <body>
 
-  <%= yield %>
+  <div class="inner_area_1">
+    <%= render 'layouts/header' %>
+      
+      <div class="inner_area_2">
+        <%= yield %>
+      </div>  <!-- area 2 -->
+
+    <%= render 'layouts/footer' %>  
+  </div> <!-- area 1 -->
 
 </body>
-  
+
+<%= javascript_include_tag "application" %>
+
 </html>

@@ -1,100 +1,51 @@
 <% provide(:title_end, 'Home') %>
 
+
+<div id="myCarousel" class="carousel slide" data-pause="hover">
+
+  	<!-- Carousel items -->
+	<div class="carousel-inner">
+	<div class="active item">
+		<%= image_tag src="row_homes_grayscale.png", alt: "" %>
+	</div>
+	<div class="item">
+		<%= image_tag src="school_greyscale.png", alt: "" %>
+	</div>
+	<div class="item">
+		<%= image_tag src="bricks_grayscale.png", alt:"" %>
+	</div>
+	</div>
 	
+	<!-- Carousel nav -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
-	    <!--%= render 'layouts/navbar' %-->
-	  
-	    <div class="">
-	    	<div class="inner_area_1">
-	    		<div class="navbar navbar-inverse">
-	    			
-	    				
-			    			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-					            <span class="icon-bar"></span>
-			          		</a>
+</div>
 
-				    	    <!--div class="masthead"-->
-				        		<ul class="nav nav-pills pull-right nav-collapse collapse">
-				          			<li class="active"><a href="#">Home</a></li>
-				          			<li> <a href="#">Services</a> </li>
-				          			<li><a href="#">Samples</a></li>
-				          			<li><a href="#">Contact Us</a></li>
-				        		</ul>
-				        		<h3 class="logo">McBride Masonry</h3>
-				      		<!--/div-->
-				      	
-			      		
-	      		</div>
+<!-- -------------------------------------------------------------------------- -->
 
-	      		<div class="inner_area_2">
+<!-- OTHER TEXT ON HOME PAGE -->
+<div class="center-text">
+	
+	<h2> 
+		Masonry | Concrete | Remodelling
+	</h2>
+		
+	<h3>
+		Serving the Greater Philadelphia area for 10 years <br/>
+	</h3>
+</div>		
 
-		      		<div id="myCarousel" class="carousel slide" data-pause="hover">
-					  <!-- Carousel items -->
-					  <div class="carousel-inner">
-					    <div class="active item">
-					    	<%= image_tag src="row_homes_grayscale.png", alt: "" %>
-					    </div>
-					    <div class="item">
-					    	<%= image_tag src="school_greyscale.png", alt: "" %>
-					    </div>
-					    <div class="item">
-					    	<%= image_tag src="bricks_grayscale.png", alt:"" %>
-					    </div>
-					  </div>
-					  <!-- Carousel nav -->
-					  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-					  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-					</div>
-
-					
-					<div class="center-text">
-						
-								<h2> 
-									Masonry | Concrete | Remodelling
-								</h2>
-							
-						<h3>
-							Serving the Greater Philadelphia area for 10 years <br/>
-						</h3>
-					</div>		
-
-					<div class="center-text calling-card">
-						<h3>
-							Call us today - 215 555 5555
-						</h3>
-					</div>		 
+<div class="center-text calling-card">
+	<h3>
+		Call us today - 215 555 5555
+	</h3>
+</div>		 
 
 
-		      	</div> <!-- inner-area-2 -->
-
-		      	<footer >
-					
-					
-					<p>Web Design by Akinwale Olaleye</p>
-					
-
-					<ul>
-						<li> <%= image_tag src="g-plus-icon-32x32.png", alt: "",
-								height: "32", width: "32" %>
-						</li>
-						<li>
-							<%= image_tag src="twitter-bird.png", alt: "", 
-							   height: "32", width: "32" %>
-						</li>
-						<li>
-							<%= image_tag src="facebook-logo.png", alt: "" , 
-							   height: "32", width: "32" %>
-						</li>
-					</ul>
-
-				</footer>
-
-	      	</div> <!-- inner-area-1 -->
-
+		      	
 	      	
 
-	    </div> <!-- /container -->
+	    
 	
 
